@@ -1,0 +1,108 @@
+@import url('https://fontlibrary.org/face/chomsky');
+
+#nprogress .bar {
+    height: 5px !important;
+}
+
+.ql-editor {
+    min-height: 300px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+    -webkit-transition: 0.5s cubic-bezier(0.23,1,0.32,1);
+    transition: 0.5s cubic-bezier(0.23,1,0.32,1);
+    &.light, .light {
+        background: rgba(255,255,255,1);
+    }
+    &.dark, .dark {
+        background: black;
+    }
+    &.shadow {
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.28);
+    }
+    &.mobile-only {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h1 {
+            line-height: 1;
+            display: flex;
+            a {
+                font-size: 1.5rem;
+            }
+        }
+        .top {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// Testing naming conventions
+.button {
+    cursor: pointer;
+    font-family: helvetica,arial,sans-serif;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 3px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.05em;
+    -moz-letter-spacing: 0.05em;
+    -ms-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0.7rem 0.75rem 0.5rem;
+    margin: 0.25rem;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.sm {
+        font-size: 0.7rem;
+    }
+    &.md {
+        font-size: 1rem;
+    }
+    &.lg {
+        font-size: 1.3rem;
+    }
+
+    &.blue {
+        background-color: #567b95;
+        border: 1px solid #326891;
+        color: #ffffff;
+        &:hover {
+            border: 1px solid #326891;
+            background-color: #326891;
+        }
+    }
+    &.black {
+        background: #1c1c1c;
+        border: 1px solid black;
+        color: #ffffff;
+        &:hover {
+            background: black;
+        }
+    }
+}

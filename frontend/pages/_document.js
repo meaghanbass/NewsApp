@@ -7,7 +7,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="/public/styles/styles.css" />
+                    <link rel="stylesheet" href="/public/styles/styles.scss" />
                 </Head>
                 <body>
                     <Main />
